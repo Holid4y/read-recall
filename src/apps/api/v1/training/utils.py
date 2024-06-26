@@ -8,6 +8,8 @@ def get_time_on_lvl(user, current_lvl: int) -> int:
     second_in_day = 86400
     levels = user.settings['levels']
 
+
+    #ошибка !!!!
     day_in_lvl = levels[current_lvl-1]
     time = second_in_day * day_in_lvl
     return time
